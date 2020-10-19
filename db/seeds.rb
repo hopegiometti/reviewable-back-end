@@ -25,4 +25,13 @@ emma = Movie.create(title: "Emma.", description: "Following the antics of a youn
 hope = User.create(username: "hope", password: "123", number_rewatches: 1)
 
 #User Movies
-hope_rocketman_one = UserMovie.create(user: hope, movie: rocketman)
+hope_rocketman = UserMovie.create(user: hope, movie: rocketman, num_watches: 12)
+hope_juno = UserMovie.create(user: hope, movie: juno, num_watches: 55)
+hope_ending = UserMovie.create(user: hope, movie: ending, num_watches: 0)
+hope_fury = UserMovie.create(user: hope, movie: fury, num_watches: 10)
+hope_trainwreck = UserMovie.create(user: hope, movie: trainwreck, num_watches: 7)
+hope_midnight = UserMovie.create(user: hope, movie: midnight, num_watches: 15)
+hope_twilight = UserMovie.create(user: hope, movie: twilight, num_watches: 4)
+hope_fight = UserMovie.create(user: hope, movie: fight, num_watches: 27)
+hope_little = UserMovie.create(user: hope, movie: little, num_watches: 3)
+hope_emma = UserMovie.create(user: hope, movie: emma, num_watches: 2)
