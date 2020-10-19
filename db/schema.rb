@@ -17,11 +17,12 @@ ActiveRecord::Schema.define(version: 2020_10_15_161700) do
 
   create_table "movies", force: :cascade do |t|
     t.string "title"
-    t.integer "score"
+    t.integer "original_score"
     t.string "description"
     t.integer "year"
     t.integer "rewatch_number"
     t.string "poster"
+    t.integer "current_score"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
