@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2020_10_15_161700) do
     t.string "description"
     t.integer "year"
     t.integer "rewatch_number"
+    t.string "poster"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -28,6 +29,7 @@ ActiveRecord::Schema.define(version: 2020_10_15_161700) do
   create_table "user_movies", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.bigint "movie_id", null: false
+    t.integer "num_watches"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["movie_id"], name: "index_user_movies_on_movie_id"

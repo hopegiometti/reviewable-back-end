@@ -3,6 +3,7 @@ class CreateUserMovies < ActiveRecord::Migration[6.0]
     create_table :user_movies do |t|
       t.references :user, null: false, foreign_key: true
       t.references :movie, null: false, foreign_key: true
+      t.integer :num_watches
 
       t.timestamps
     end
